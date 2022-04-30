@@ -10,7 +10,7 @@ import styled, {
 //import { useIsDarkMode } from '../state/user/hooks'
 import { Text, TextProps } from 'rebass'
 import { Colors } from './styled'
-import BackgroundImage from '../assets/images/background-min.png'
+// import BackgroundImage from '../assets/images/background-min.png'
 
 export * from './components'
 
@@ -50,7 +50,7 @@ export function colors(): Colors {
     text5: '#2C2F36',
 
     // backgrounds / greys
-    bg1: '#212429',
+    bg1: '#1a0742',
     bg2: '#2C2F36',
     bg3: '#40444F',
     bg4: '#565A69',
@@ -208,13 +208,14 @@ html {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
-  background: url(${BackgroundImage})
+  background-color: #e7c3c3;
 }
 
 
 `
 /* 
 body {
+  background: url(${BackgroundImage})
   min-height: 100vh;
   background-position: 0 -30vh;
   background-repeat: no-repeat;
